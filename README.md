@@ -1,5 +1,7 @@
 # Ohjelmistotekniikka harjoitustyö
 
+[laskarit viikko 3](https://github.com/iikkamatias/harjoitustyo/tree/master/laskarit/viikko3)
+
 [määrittelydokumentti](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/dokumentaatio.md)
 
 [tuntikirjanpito](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
