@@ -10,13 +10,13 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 
-public class StartmenuUi {
+public final class StartmenuUi {
 
-    private BorderPane mainLayout;
-    private BorderPane startMenu;
+    private final BorderPane mainLayout;
+    private final BorderPane startMenu;
     private TextField gridSize;
     private TextField rowSize;
-    private Label warning;
+    private final Label warning;
 
     public StartmenuUi(BorderPane mainLayout) {
         this.mainLayout = mainLayout;
@@ -28,35 +28,35 @@ public class StartmenuUi {
 
     public void createLayout() {
 
-        startMenu.setPrefSize(500, 500);
-        Insets insets = new Insets(20);
+        startMenu.setPrefSize(600, 600);
+        Insets insets = new Insets(25);
         BorderPane top = new BorderPane();
 
-        Label titel = new Label("Tervetuloa pelaamaan ristinollaa!");
-        titel.setFont(new Font("Arial", 20));
+        Label titel = new Label("Pelataan ristinollaa!");
+        titel.setFont(new Font("Arial", 25));
         titel.setAlignment(Pos.CENTER);
 
         top.setCenter(titel);
-        top.setMargin(titel, insets);
+        BorderPane.setMargin(titel, insets);
 
-        VBox textFieldLayout = new VBox(8);
-        Label instructions = new Label("Kirjoita ruudukon koko ja voittosuoran pituus. \n            Ruudukon koon tulee olla 3–7 \n    Voittosuora ei voi olla ruudukkoa isompi!");
+        VBox textFieldLayout = new VBox(15);
+        Label instructions = new Label("Kirjoita ruudukon koko ja voittavan suoran pituus. \n Voittosuora ei voi olla ruudukkoa isompi!");
         this.gridSize = new TextField();
-        this.gridSize.setPromptText("ruudukko");
-        gridSize.setMaxWidth(80);
+        this.gridSize.setPromptText("Ruudukon koko");
+        gridSize.setMaxWidth(150);
         this.rowSize = new TextField();
-        this.rowSize.setPromptText("suora");
-        rowSize.setMaxWidth(80);
+        this.rowSize.setPromptText("Voitto suoran pituus");
+        rowSize.setMaxWidth(150);
         textFieldLayout.setAlignment(Pos.CENTER);
         this.warning.setAlignment(Pos.CENTER);
         textFieldLayout.getChildren().addAll(instructions, gridSize, rowSize, warning);
 
         Button chooseButton = createButton();
 
-        startMenu.setAlignment(textFieldLayout, Pos.CENTER);
-        startMenu.setAlignment(top, Pos.CENTER);
-        startMenu.setAlignment(chooseButton, Pos.TOP_CENTER);
-        startMenu.setMargin(chooseButton, insets);
+        BorderPane.setAlignment(textFieldLayout, Pos.CENTER);
+        BorderPane.setAlignment(top, Pos.CENTER);
+        BorderPane.setAlignment(chooseButton, Pos.TOP_CENTER);
+        BorderPane.setMargin(chooseButton, insets);
 
         startMenu.setTop(top);
         startMenu.setCenter(textFieldLayout);
@@ -66,6 +66,26 @@ public class StartmenuUi {
 
     }
 
+    public Button createButton() {
+        Button sizesChosen = new Button("Pelaamaan");
+
+        sizesChosen.setOnAction((actionEvent -> {
+            try {
+                if (grid() > 2 && grid() >= row() && row() > 2 && grid() < 8) {
+                    GamelayoutUi gameLayout;
+                    gameLayout = new GamelayoutUi(grid(), row(), mainLayout);
+                    mainLayout.setCenter(gameLayout.getLayout());
+
+                } else {
+                    this.warning.setText("Tarkista ruudukon ja voittavan suoran koko");
+                }
+            } catch (NumberFormatException e) {
+                this.warning.setText("Käytä numeroita!");
+            }
+        }));
+
+        return sizesChosen;
+    }
 
     public int grid() {
         return Integer.valueOf(this.gridSize.getText());
@@ -83,8 +103,4 @@ public class StartmenuUi {
         return this.startMenu;
     }
 
-    private Button createButton() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-} 
+}

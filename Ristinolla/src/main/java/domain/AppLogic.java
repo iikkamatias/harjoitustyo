@@ -5,14 +5,14 @@ import java.util.ArrayList;
 
 public class AppLogic {
  private String turn;
-    private String[][] score;
+    private final String[][] score;
     private boolean gameOver;
-    private int rowSize;
+    private final int rowSize;
     private String winner;
     private int xmoves;
     private int omoves;
     private int winnermoves;
-    private int gridSize;
+    private final int gridSize;
 
     //Tallentaa käynnissä olevan pelin tiedot ja voidaan muuttaa pelin tila
     
@@ -37,7 +37,7 @@ public class AppLogic {
     
     public void updateScore(int x, int y) {
         this.score[x][y] = this.turn;
-        if (this.turn == "X") {
+        if ("X".equals(this.turn)) {
             this.xmoves++;
         } else {
             this.omoves++;
@@ -47,11 +47,7 @@ public class AppLogic {
     //Tarkistaa, että tulostaululla on tyhjä paikka eli arvo "e", palauttaa true, kun sijainti on vapaa
     
     public boolean spaceEmpty(int x, int y) {
-        if (this.score[x][y].equals("e")) {
-            return true;
-        } else {
-            return false;
-        }
+     return this.score[x][y].equals("e");
     }
 
     public String getWinner() {
@@ -146,8 +142,8 @@ public class AppLogic {
     // tarkistaa onko vasemman kulman voittajalävistäjä selvinnyt
     
     public boolean winnerDiagRightDown(int x, int y) {
-        int row = 0;
-        int col = 0;
+        int row;
+        int col;
         if (x > y) {
             row = x - y;
             col = 0;
@@ -185,8 +181,8 @@ public class AppLogic {
     // tarkistaa onko oikean alakulman voittajalävistäjä selvinnyt
     
     public boolean winnerDiagLeftUp(int x, int y) {
-        int row = 0;
-        int col = 0;
+        int row;
+        int col;
         if (x + y < this.score.length - 1) {
             row = x + y;
             col = 0;

@@ -1,7 +1,6 @@
 
 package main;
 
-import static javafx.application.Application.launch;
 import userinterface.GameUi;
 
  //Main class aloittaa ristinolla pelin
