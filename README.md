@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka harjoitustyö
 
-[laskarit viikko 3](https://github.com/iikkamatias/harjoitustyo/tree/master/laskarit/viikko3)
+[arkkitehtuuri](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 [määrittelydokumentti](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/dokumentaatio.md)
 
