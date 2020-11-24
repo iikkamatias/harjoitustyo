@@ -19,6 +19,11 @@
  ```
   mvn test jacoco:report
  ```
+ 
+  Checkstyleraportti luodaan komennolla:
+ ```
+  mvn jxr:jxr checkstyle:checkstyle
+ ```
 
 ### Ohjelman suorittaminen
 
