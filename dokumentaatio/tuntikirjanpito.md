@@ -8,4 +8,8 @@
 | 13.11. | 6    | Koodin korjaamista ja ekat testit |
 | 14.11. | 4    | Tietokantojen selvittelyä|
 | 17.11. | 2    | Projektin kansioiden järkeistämistä ja käyttöliittymän säätöä|
-| yht   | 32  | | 
+| 19.11. | 4   | Käyttöliittymän tekoa |
+| 20.11. | 4    | Käyttöliittymän ongelmien ratkomista |
+| 23.11. | 2    | Projektin suunnittelua yleisesti|
+| 24.11. | 4    | Viikon 4 tavoitteiden tutkimista, arkkitehtuurikuvaus, pom kuntoon ja checkstyle, sekä skippedfiles |
+| yht   | 46  | | 
