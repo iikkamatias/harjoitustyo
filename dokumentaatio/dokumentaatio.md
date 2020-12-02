@@ -2,14 +2,14 @@
 
 ## Sovellus
 
-Sovelluksen tarkoitus on olla perinteinen Ristinolla-peli, jossa kaksi pelaajaa pelaa toisiaan vastaan. Sovelluksessa on mahdollista valita ruudukon koko ja voittavanrivin pituus. Jos pelaaja tekee vähän siirtoja, hän pääsee highscore-listalle.
+Sovelluksen tarkoitus on olla perinteinen Ristinolla-peli, jossa kaksi pelaajaa pelaa toisiaan vastaan. Pelaaja voi valita itselleen nimen.
 
 ## Käyttäjät
 
 Sovelluksessa on vain normaaleja käyttäjiä eli pelaajia, ei siis muita käyttäjärooleja.
 
 ## Toiminnallisuus
-*	Käyttäjä voi valita ruudukon koon.
-*	Käyttäjä voi voittavan rivin pituuden.
-*	Käyttäjä voi pelata ristinollaa samalla koneella toisen pelaajan kanssa.
-*	Jos pelaaja tekee vähän siirtoja, hän pääsee highscore-listalle.
+*	Käyttäjä voi valita nimen.
+*	Käyttäjä voi pelata ristinollaa
+*	Käyttäjä voi pelata ristinollaa uudestaan
+*	Käyttäjä voi tarkastella ketkä kaikki ovat pelanneet peliä
