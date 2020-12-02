@@ -1,14 +1,15 @@
 
 package main;
 
-import userinterface.GameUi;
+import userinterface.Game;
 
- //Main class aloittaa ristinolla pelin
+
+ //Main class aloittaa pelin
 
 public class Main {
 
     public static void main(String[] args) {
-        GameUi.main(args);
+        Game.main(args);
     }
 
 }

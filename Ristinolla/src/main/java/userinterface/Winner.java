@@ -1,33 +1,31 @@
 
 package userinterface;
 
-import domain.AppLogic;
+import domain.Logic;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
-public final class WinnerUi {
-
+public class Winner {
     private final BorderPane winnerLayout;
     private final String winner;
-    private final AppLogic appLogic;
-    private final BorderPane mainLayout;
+    private final Logic logic;
+    private final BorderPane layout;
     private final boolean draw;
     private final Label warning;
-
-    public WinnerUi(AppLogic appLogic, BorderPane mainLayout, boolean draw) {
+    
+    public Winner(Logic logic, BorderPane layout, boolean draw) {
         this.warning = new Label("");
         this.draw = draw;
-        this.mainLayout = mainLayout;
-        this.appLogic = appLogic;
+        this.layout = layout;
+        this.logic = logic;
         this.winnerLayout = new BorderPane();
-        this.winner = this.appLogic.getWinner();
+        this.winner = this.logic.getWinner();
 
         createLayout();
     }
-
     public void createLayout() {
         Label gamewinner = new Label();
         if (this.draw) {
