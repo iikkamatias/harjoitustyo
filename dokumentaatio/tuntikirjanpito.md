@@ -12,4 +12,9 @@
 | 20.11. | 4    | Käyttöliittymän ongelmien ratkomista |
 | 23.11. | 2    | Projektin suunnittelua yleisesti|
 | 24.11. | 4    | Viikon 4 tavoitteiden tutkimista, arkkitehtuurikuvaus, pom kuntoon ja checkstyle, sekä skippedfiles |
-| yht   | 46  | | 
+| 19.11. | 4   | Käyttöliittymän tekoa |
+| 29.11. | 4    | Netistä kopioidun koodin korvaamista omalla koodilla |
+| 30.11. | 4    | Projektin suunnittelua ja koodausta|
+| 1.12. | 4    | Testien tekoa |
+| 2.12. | 4    | Viikon 5 deadline asioiden tekoa |
+| yht   | 62  | | 
