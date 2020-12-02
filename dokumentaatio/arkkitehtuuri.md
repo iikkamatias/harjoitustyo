@@ -12,21 +12,16 @@ Pakkaus _userinterface_ sisältää JavaFX:llä toteutetun käyttöliittymän _d
 
  Sovelluksen käyttöliittymä koostuu kahdesta kokonaisuudesta:
  * Ristinolla peli ja siihen liittyvät valinnat
-	* Aloitusnäkymä, jossa voi valita ruudukon sekä voittavan suoran koon
+	* Aloitusnäkymä, jossa pelaaja voi valita nimen
 	* Pelinäkymä, jossa pelataan peliä
- * Näkymän Highscores-listoille
-	* Jos pääsee listalle, voi lisätä oman nimimerkin
-	* Highscores-listanäkymä näyttää pienimmillä siirroilla voitetut pelit aina tietyllä ruudukon ja voittosuoran koolla.
+	* Loppunäkymä, jossa pelaaja voi siirtyä katselemaan, ketkä ovat peliä pelanneet.
+ * Näkymän Pelaajista, jotka ovat peliä pelanneet
+	* Peliä pelatessa listalle tulee nimimerkki automaattisesti
 
 Kaikki scenet on omia BorderPane-olioita, jotka asetetaan GameUissa luotuun päänäkymään.
 
 Käyttäjä tekee käyttöliittymässä valintoja, jotka vaikuttavat toimintaan. Esim. klikkaa uuden siirron tai valitsee ruudukon koon.## Sovelluslogiikka
 
- Sovellus toimii kolmessa eri kerroksessa. Ensimmäinen kerros eli pakkaus ristinollaapp.ui sisältää käyttöliittymän koodin. Pakkaus ristinollaapp.domain sisältää sovelluksen sovelluslogiikan
- ja viimeinen pakkaus eli ristinollaapp.dao sisältää tietojen pysyväistalletuksen.
-
- Käyttäjän toiminnan mukaan ui-kerroksesta siirtyy metodien avulla tietoja ja käskyjä sovelluslogiikkaan, joka mm. ylläpitää käynnissä olevan ristinollapelin tilannetta kaksiulotteisessa taulukossa. Kun pelilogiikassa huomataan, että peli 
- on päättynyt top-listalogiikka tallettaa kyseisen pelin tietoja dao-pakkauksen tietokantaan. 
 
 ## Sovelluslogiikka
 
