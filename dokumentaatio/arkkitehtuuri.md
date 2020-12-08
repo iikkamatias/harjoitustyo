@@ -34,4 +34,4 @@ Käyttäjän toiminnan seurauksena Userinterface siirtää metodien avulla tieto
 
  
  ## Sekvenssikaavio
- <img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/sekvenssikaavio.png" width="160">
+ <img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/sekvenssikaavio.png" width="500">
