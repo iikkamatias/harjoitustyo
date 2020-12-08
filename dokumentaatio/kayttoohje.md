@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedosto [ristinolla.jar](https://github.com/iikkamatias/Ristinolla/releases/tag/viikko6)
+Lataa tiedosto [ristinolla.jar](https://github.com/iikkamatias/harjoitustyo/releases/tag/Viikko6)
 
 
 ## Ohjelman käynnistäminen
