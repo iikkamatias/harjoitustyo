@@ -18,7 +18,7 @@ Pakkaus _userinterface_ sisältää JavaFX:llä toteutetun käyttöliittymän _d
  * Näkymän Pelaajista, jotka ovat peliä pelanneet
 	* Peliä pelatessa listalle tulee nimimerkki automaattisesti
 
-Kaikki scenet on omia BorderPane-olioita, jotka asetetaan GameUissa luotuun päänäkymään.
+Kaikki scenet on omia BorderPane-olioita, jotka asetetaan Game:ssa luotuun päänäkymään.
 
 Käyttäjä tekee käyttöliittymässä valintoja, jotka vaikuttavat toimintaan. Esim. klikkaa uuden siirron tai valitsee ruudukon koon.## Sovelluslogiikka
 
