@@ -3,17 +3,28 @@ package domain;
 
 import java.util.Arrays;
 
+/**
+ * This java class contains methods to change and observe the current status of the game.
+ *
+ */
+
 public class Logic {
  
     private String[][] game;
     private String turn;
     private String winner;
- 
+    /**
+     * Creates the ongoing game and sets turn to X
+     * the status of the game.
+     */ 
     public Logic() {
         this.game = new String[][]{{" ", " ", " "}, {" ", " ", " "}, {" ", " ", " "}};
         this.turn = "X";
     }
- 
+    /**
+     * Checks the ongoing game grid is 3x3
+     * 
+     */ 
     public String status(int x, int y) {
         if (x < 0 || y < 0 || x > 2 || y > 2) {
             return "";
@@ -21,6 +32,11 @@ public class Logic {
  
         return this.game[x][y];
     }
+    
+    /**
+     * Changes the turn. Sets the turn on ongoing game
+     * 
+     */ 
  
     public void set(int x, int y) {
         if (x < 0 || y < 0 || x > 2 || y > 2) {
@@ -44,7 +60,14 @@ public class Logic {
         }
  
     }
- 
+     /**
+     * Checks if there is winning line. This is used to see if the game has ended.
+     * @return true if there is winning line
+     * 
+     * Check if the game has ended in a draw or in the other players win.
+     * sets the winner based on turn or sets the winner to nobody
+     * 
+     */
     public boolean end() {
         int[][] same = {
             {0, 1, 2},

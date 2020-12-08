@@ -35,6 +35,12 @@ public class EndScreen {
         endGameLayout.setTop(gameEnded);
         endGameLayout.setCenter(buttons);
         
+        Button gameButton = gameButton();
+        
+        BorderPane.setAlignment(gameButton, Pos.TOP_CENTER);
+        BorderPane.setMargin(gameButton, insets);
+        endGameLayout.setCenter(gameButton);
+        
         Button menuButton = menuButton();
         
         BorderPane.setAlignment(menuButton, Pos.TOP_CENTER);
@@ -42,16 +48,28 @@ public class EndScreen {
         endGameLayout.setBottom(menuButton);
     }
     
-        public Button menuButton() {
+    public Button menuButton() {
         Button toMenu = new Button("Back to menu");
 
         toMenu.setOnAction((event -> {
             MenuScreen menuLayout;
             menuLayout = new MenuScreen(mainLayout);
-            mainLayout.setCenter(menuLayout.getMainLayout());
+            menuLayout.getMainLayout();
         }));
 
         return toMenu;
+    }
+        
+    public Button gameButton() {
+        Button toGame = new Button("Play again");
+
+        toGame.setOnAction((event -> {
+            GameScreen gameLayout;
+            gameLayout = new GameScreen();
+            gameLayout.getGameLayout();
+        }));
+
+        return toGame;
     }
 
     public BorderPane getEndLayout() {
