@@ -6,6 +6,8 @@
 
 [tuntikirjanpito](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+[käyttöohje](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
 ## Komentorivitoiminnot
 
 ### Testaus
