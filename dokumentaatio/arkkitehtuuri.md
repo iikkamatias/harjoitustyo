@@ -4,7 +4,7 @@
 
 Ohjelman rakenne noudattelee kolmitasoista kerrosarkkitehtuuria, ja koodin pakkausrakenne on seuraava:
 
-<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuva.png" width="160">
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuva.png" width="300">
 
 Pakkaus _userinterface_ sisältää JavaFX:llä toteutetun käyttöliittymän _domain_ sovelluslogiikan ja _dao_ tietojen pysyväistallennuksesta vastaavan koodin.
 
