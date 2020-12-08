@@ -28,6 +28,10 @@ Käyttäjä tekee käyttöliittymässä valintoja, jotka vaikuttavat toimintaan.
  Sovelluksessa on kolme kerrosta. Userinterface sisältää käyttöliittymän koodin. Domain sisältää sovelluksen sovelluslogiikan. Dao sisältää tietojen tallentamisen. 
  
 Käyttäjän toiminnan seurauksena Userinterface siirtää metodien avulla tietoja, sekä komentoja sovelluslogiikkaan.
+
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/luokkakaavio.png" width="160">
+
+
  
  ## Sekvenssikaavio
  <img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/sekvenssikaavio.png" width="160">
