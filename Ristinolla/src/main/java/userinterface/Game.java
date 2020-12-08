@@ -16,50 +16,20 @@ import javafx.stage.Stage;
  
 public class Game extends Application {
     
+    BorderPane mainLayout;
+    
     public static void main(String[] args) {
-        launch(Game.class);
+        launch(args);
     }
- 
     @Override
-    public void start(Stage stage) throws Exception {
-        Logic game = new Logic();
+    public void start(Stage stage) {
+        
+        stage.setTitle("Ristinolla");
  
-        Font equalWidth = Font.font("Monospaced", 40);
- 
-        Label gameProgress = new Label("Turn: " + game.getTurn());
-        gameProgress.setFont(equalWidth);
- 
-        BorderPane layout = new BorderPane();
-        layout.setTop(gameProgress);
- 
-        GridPane grid = new GridPane();
-        grid.setHgap(10);
-        grid.setVgap(10);
-        grid.setPadding(new Insets(10, 10, 10, 10));
- 
-        for (int x = 0; x < 3; x++) {
-            for (int y = 0; y < 3; y++) {
-                Button button = new Button(game.status(x, y));
-                button.setFont(equalWidth);
- 
-                grid.add(button, x, y);
- 
-                int rx = x;
-                int ry = y;
- 
-                button.setOnAction((event) -> {
-                    game.set(rx, ry);
-                    button.setText(game.status(rx, ry));
-                    gameProgress.setText("Turn: " + game.getTurn());
- 
-                    if (game.end()) {
-                        gameProgress.setText("End");
-                    }
-                });
-            }
-        }
- 
-        layout.setCenter(grid);
+        this.mainLayout = new BorderPane();
+        MenuScreen startmenu = new MenuScreen(this.mainLayout);
+        BorderPane layout = startmenu.getMainLayout();
+
         Scene scene = new Scene(layout);
         stage.setScene(scene);
         stage.show();
