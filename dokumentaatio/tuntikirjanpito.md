@@ -17,4 +17,7 @@
 | 30.11. | 4    | Projektin suunnittelua ja koodausta|
 | 1.12. | 4    | Testien tekoa |
 | 2.12. | 4    | Viikon 5 deadline asioiden tekoa |
-| yht   | 62  | | 
+| 3.12. | 4    | Projektin koodausta ja scenejen säätöä|
+| 7.12. | 4    | Uusien ominaisuuksien luomista|
+| 8.12. | 4    | Viikon 6 deadlinen tekoa |
+| yht   | 74  | | 
