@@ -24,6 +24,15 @@
  ```
   mvn jxr:jxr checkstyle:checkstyle
  ```
+ ### Suoritettavan jarin generointi
+
+Komento
+
+```
+mvn package
+```
+
+generoi hakemistoon _target_ suoritettavan jar-tiedoston _Ristinolla-1.0-SNAPSHOT.jar_
 
 ### Ohjelman suorittaminen
 
