@@ -1,12 +1,12 @@
 # Ohjelmistotekniikka harjoitustyö
 
-[arkkitehtuuri](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+[Arkkitehtuuri](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[määrittelydokumentti](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/dokumentaatio.md)
+[Määrittelydokumentti](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/dokumentaatio.md)
 
-[tuntikirjanpito](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Tuntikirjanpito](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-[käyttöohje](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+[Käyttöohje](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
 ## Komentorivitoiminnot
 
