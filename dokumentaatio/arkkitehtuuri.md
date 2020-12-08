@@ -29,7 +29,7 @@ Käyttäjä tekee käyttöliittymässä valintoja, jotka vaikuttavat toimintaan.
  
 Käyttäjän toiminnan seurauksena Userinterface siirtää metodien avulla tietoja, sekä komentoja sovelluslogiikkaan.
 
-<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/luokkakaavio.png" width="160">
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/luokkakaavio.png" width="600">
 
 
  
