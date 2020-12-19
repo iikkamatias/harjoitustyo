@@ -20,4 +20,8 @@
 | 3.12. | 4    | Projektin koodausta ja scenejen säätöä|
 | 7.12. | 4    | Uusien ominaisuuksien luomista|
 | 8.12. | 4    | Viikon 6 deadlinen tekoa |
-| yht   | 74  | | 
+| 9.12. | 4    | Tutustumista Daoihin|
+| 18.12. | 4    | Ongelmien korjausta|
+| 19.12. | 8    | Loppupalautuksen tekoa|
+| 20.12. | 4    | Loppupalautuksen tekoa |
+| yht   | 94  | | 
