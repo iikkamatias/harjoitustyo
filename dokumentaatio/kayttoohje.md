@@ -17,13 +17,13 @@ Sovellus käynnistyy aloitusnäkymään (MenuScreen):
 
 Aloitusnäkymästä voit siirtyä nappia painamalla peliin (GameScreen) tai lopetusnäyttöön (EndScreen).
 
-<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Menu" width="600">
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Menu.png" width="600">
 
 ## GameScreen
 
 Pelinäkymässä voit pelata ristinollapeliä.
 
-<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Game" width="600">
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Game.png" width="600">
 
 Pelin päättyessä siirryt lopetusnäyttöön (EndScreen).
 
@@ -32,4 +32,4 @@ Pelin päättyessä siirryt lopetusnäyttöön (EndScreen).
 Lopetusnäytöstä voit siirtyä nappia painamalla takaisin aloitusnäkymään (MenuScreen) ja aloittaa pelin alusta.
 Lopetusnäytössä on myös nappi josta piti pystyä lisäämään nimi tietokantaan, mutta se ei vielä toimi.
 
-<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/End" width="600">
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/End.png" width="600">
