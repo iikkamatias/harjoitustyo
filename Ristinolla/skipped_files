@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <suppress files="userinterface.GameScreen.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="userinterface.Game.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="userinterface.EndScreen.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="userinterface.MenuScreen.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="userinterface.UsernamesScreen.java" checks="[a-zA-Z0-9]*"/>
+</suppressions>
