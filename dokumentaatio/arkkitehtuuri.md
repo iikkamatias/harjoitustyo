@@ -35,3 +35,12 @@ Käyttäjän toiminnan seurauksena Userinterface siirtää metodien avulla tieto
  
  ## Sekvenssikaavio
  <img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/sekvenssikaavio.png" width="500">
+ 
+ ## Ohjelman rakenteeseen jääneet heikkoidet
+
+### Käyttöliittymä
+
+ Sovellus luo uusia näkymiä aina, kun sellaiseen siirrytään. Javan roskankerääjä kerää ne pois, mutta olisi ehkä käytännöllisempää uusien näkymien luonnin sijaan päivittää jo olemassa olevia näkymiä.
+
+### Dao  
+ Tietokanta ei toimi vielä
