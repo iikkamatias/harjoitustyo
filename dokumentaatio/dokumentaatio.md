@@ -16,6 +16,8 @@ Sovellus aukeaa aloitusnäkymään (MenuScreen), josta on mahdollista siirtyä p
 Pelinäkymässä voit pelata ristinollapeliä. Pelin päätyttyä siirtyy peli automaattisesti lopetusnäyttöön.
 Lopetusnäytöstä voit palata takaisin aloitusnäyttöön ja aloittaa pelin uudelleen.
 
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Näytöt.png" width="600">
+
 
 ## Toiminnallisuus
 - [x] Käyttäjä voi valita nimen.
