@@ -17,6 +17,7 @@ public class GameScreen {
     private Label turn;
     private BorderPane mainLayout;
     private Logic logic;
+    private GridPane grid;
     
     public void gameScreen(BorderPane mainLayout) { 
         
@@ -24,6 +25,7 @@ public class GameScreen {
         this.mainLayout = mainLayout;
         this.gameLayout = new BorderPane();
         this.turn = new Label("Turn: " + this.logic.getTurn());
+        this.grid = new GridPane();
 
         createLayout();
     }
@@ -37,14 +39,15 @@ public class GameScreen {
         VBox titels = new VBox(10);
         titels.setAlignment(Pos.CENTER);
         titels.getChildren().addAll(this.turn, rowText);
- 
-        gameLayout.setTop(turn);
         
-        GridPane grid = new GridPane();
+        gameLayout.setAlignment(titels, Pos.CENTER);
+        gameLayout.setTop(titels);
+        
  
         grid.setHgap(100);
         grid.setVgap(100);
         grid.setPadding(new Insets(10, 10, 10, 10));
+        
  
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {
@@ -66,6 +69,9 @@ public class GameScreen {
                 });
             }
         }
+        
+        gameLayout.setAlignment(grid, Pos.CENTER);
+        
 
     }
     

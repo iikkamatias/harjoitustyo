@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class UsernameDao {
+public class UsernamesDao {
     
 
     private Connection connection;
@@ -22,7 +22,7 @@ public class UsernameDao {
      * method initializeDB() creates a new table if one doesn't exist.
      */
     
-    public UsernameDao(String dbname) {
+    public UsernamesDao(String dbname) {
         this.dbname = dbname;
 
         initializeDB();
@@ -104,6 +104,7 @@ public class UsernameDao {
 
             closeConnection();
             return names;
+            
         } catch (SQLException e) {
             System.out.println("An error occurred while searching for the usernames!");
             return null;

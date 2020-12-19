@@ -1,42 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package domain;
 
-import dao.UsernameDao;
+import dao.UsernamesDao;
 import java.util.ArrayList;
 
-/**
- *
- * @author iikka
- */
 public class UsernamesLogic {
     
-    private UsernameDao dao;
+    private UsernamesDao dao;
     private String name;
 
     /**
-     * Constructor for when Usernames aren't used for adding a game. For example,
+     * Constructor, when Usernames aren't used for adding a new player. For example,
      * when statistics are viewed.
      *
      * @param dbname name of the sqlite-file
      *
      */
     public UsernamesLogic(String dbname) {
-        this.dao = new UsernameDao(dbname);
+        this.dao = new UsernamesDao(dbname);
     }
     /**
-     * Constructor for when Usernames aren't used for adding a game. For example,
-     * when statistics are viewed.
+     * Constructor for when Usernames are used for adding a new player.
      *
      * @param dbname name of the sqlite-file
+     * @param name name of the player
      *
      */
     public UsernamesLogic(String name, String dbname) {
 
-        this.dao = new UsernameDao(dbname);
+        this.dao = new UsernamesDao(dbname);
         this.name = name;
     }
 
@@ -51,8 +43,7 @@ public class UsernamesLogic {
     }
 
     /**
-     * Adding a name to the table with other information given in the
-     * constructor
+     * Adding a name to the table
      *
      * @param name name of the entry
      */
