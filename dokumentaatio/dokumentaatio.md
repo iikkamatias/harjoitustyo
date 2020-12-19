@@ -26,6 +26,7 @@ Lopetusnäytöstä voit palata takaisin aloitusnäyttöön ja aloittaa pelin uud
 
 ## Jatkokehitysideoita
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla
+
 -Käyttäjä voi muokata peliä, eli valita esimerkiksi ruudukon koon tai voittavan rivin pituuden.
 -Käyttäjä voi tallentaa nimensä listalle
 -Käyttäjä voi tarkastella listaa, johon hänen nimensä on lisätty
