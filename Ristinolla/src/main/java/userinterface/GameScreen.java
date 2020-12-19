@@ -17,21 +17,18 @@ public class GameScreen {
     private Label turn;
     private BorderPane mainLayout;
     private Logic logic;
-    private GridPane grid;
     
-    public void gameScreen(BorderPane mainLayout) { 
+    public GameScreen(BorderPane mainLayout) { 
         
         this.logic = new Logic();
         this.mainLayout = mainLayout;
         this.gameLayout = new BorderPane();
         this.turn = new Label("Turn: " + this.logic.getTurn());
-        this.grid = new GridPane();
 
         createLayout();
     }
     
     public void createLayout() {
-        
         turn.setFont(new Font("Arial", 20));
         Label rowText = new Label("Winning row lenght is 3");
         rowText.setFont(new Font("Arial", 15));
@@ -43,15 +40,17 @@ public class GameScreen {
         gameLayout.setAlignment(titels, Pos.CENTER);
         gameLayout.setTop(titels);
         
+        GridPane grid = new GridPane();
  
-        grid.setHgap(100);
-        grid.setVgap(100);
-        grid.setPadding(new Insets(10, 10, 10, 10));
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(100, 100, 100, 100));
         
  
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {
                 Button button = new Button(logic.status(x, y));
+                button.setFont(Font.font("Monospaced", 35));
  
                 grid.add(button, x, y);
  
@@ -64,13 +63,15 @@ public class GameScreen {
                     turn.setText("Turn: " + logic.getTurn());
  
                     if (logic.end()) {
-                        turn.setText("End");
+                        EndScreen endLayout = new EndScreen(this.mainLayout);
+                        this.mainLayout.setCenter(endLayout.getEndLayout());
                     }
                 });
             }
         }
         
         gameLayout.setAlignment(grid, Pos.CENTER);
+        gameLayout.setCenter(grid);
         
 
     }

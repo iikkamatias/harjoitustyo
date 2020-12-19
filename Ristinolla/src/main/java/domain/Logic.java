@@ -24,6 +24,9 @@ public class Logic {
     /**
      * Checks the ongoing game grid is 3x3
      * 
+     * @param x must be 3
+     * @param y must be 3
+     * @return right size
      */ 
     public String status(int x, int y) {
         if (x < 0 || y < 0 || x > 2 || y > 2) {
@@ -34,8 +37,10 @@ public class Logic {
     }
     
     /**
-     * Changes the turn. Sets the turn on ongoing game
+     * Changes the turn.Sets the turn on ongoing game
      * 
+     * @param x is set to be 3
+     * @param y is set to be 3
      */ 
  
     public void set(int x, int y) {

@@ -21,8 +21,8 @@ public class UsernamesScreen {
     /**
      * Creates a layout for the Usernames view.
      *
-     * @param usernameslogic retrieves other players who had played the game.
      * @param mainLayout mainlayout of the app, usernamesLayout will be set to it.
+     * @param usernamesLogic usernamesLogic
      */
     public UsernamesScreen(BorderPane mainLayout, UsernamesLogic usernamesLogic) {
         this.namesLayout = new VBox(10);
@@ -34,12 +34,12 @@ public class UsernamesScreen {
     }
     
     /**
-     * Creates a layout for the Toplist view.
+     * Creates a layout for List of Players.
      *
      */
     public void createUsernamesLayout() {
         Insets insets = new Insets(20);
-        Label titel = new Label("Names of the players");
+        Label titel = new Label("Names of the players who have played this game");
         titel.setFont(new Font("Arial", 20));
 
 
@@ -47,8 +47,6 @@ public class UsernamesScreen {
 
         titels.setAlignment(Pos.CENTER);
         titels.getChildren().addAll(titel);
-
-        this.namesLayout = setUsernames();
 
         Button toMenu = toStartMenu();
 
@@ -60,24 +58,7 @@ public class UsernamesScreen {
         this.usernamesLayout.setCenter(this.namesLayout);
     }
     
-    /**
-     * Sets usernames to a VBox. Uses the class UsernamesLogic for that.
-     */
-    public VBox setUsernames() {
-        ArrayList<String> list = usernamesLogic.usernames();
-        Label titel = new Label("Nickname: ");
-        titel.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
 
-        this.namesLayout.getChildren().add(titel);
-        for (int i = 0; i < list.size(); i++) {
-            String[] nameMoves = list.get(i).split(",");
-            this.namesLayout.getChildren().add(listEntry(i, nameMoves[0]));
-        }
-
-        this.namesLayout.setAlignment(Pos.CENTER);
-
-        return this.namesLayout;
-    }
     
     public Button toStartMenu() {
         Button toStart = new Button("Back to menu");
@@ -109,8 +90,6 @@ public class UsernamesScreen {
      */
     public void updateList() {
         this.usernamesLayout.getChildren().removeAll(this.usernamesLayout.getChildren());
-
-        setUsernames();
     }
     
     public BorderPane getUsernamesLayout() {

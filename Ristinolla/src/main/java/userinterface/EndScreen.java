@@ -79,15 +79,16 @@ public class EndScreen {
 
         toGame.setOnAction((event -> {
             GameScreen gameLayout;
-            gameLayout = new GameScreen();
+            gameLayout = new GameScreen(mainLayout);
             gameLayout.getGameLayout();
         }));
 
         return toGame;
     }
         /**
-     * Creates a button to go to the usernames view.
-     * Adds username to the database
+     * Creates a button to go to the usernames view.Adds username to the database
+     * @param name sets username
+     * @return returns lists
      */
     public Button addUsernameButton(TextField name) {
         Button toLists = new Button("Add username!");
@@ -96,12 +97,7 @@ public class EndScreen {
 
         toLists.setOnAction((actionEvent -> {
             if (!name.getText().equals("")) {
-                UsernamesScreen usernames;
-
-                usernames = new UsernamesScreen(mainLayout, this.usernamesLogic);
-                this.usernamesLogic.addName(name.getText());
-                usernames.updateList();
-                mainLayout.setCenter(usernames.getUsernamesLayout());
+                this.warning.setText("Not Supported yet try later!");
             } else {
                 this.warning.setText("This field cannot be empty!");
             }

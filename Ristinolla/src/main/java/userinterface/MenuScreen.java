@@ -28,27 +28,25 @@ public final class MenuScreen {
         BorderPane top = new BorderPane();
 
         Label titel = new Label("Let's Play Ristinolla!");
-        titel.setFont(new Font("Arial", 25));
+        titel.setFont(new Font("Arial", 20));
         titel.setAlignment(Pos.CENTER);
 
         top.setCenter(titel);
-        BorderPane.setMargin(titel, insets);
 
-        mainLayout.setCenter(menu);
-        
         Button playButton = createPlayButton();
-        
-        BorderPane.setAlignment(playButton, Pos.TOP_CENTER);
-        BorderPane.setMargin(playButton, insets);
-        menu.setCenter(playButton);
-        
         Button endButton = endGameButton();
         
-        BorderPane.setAlignment(endButton, Pos.TOP_CENTER);
-        BorderPane.setMargin(endButton, insets);
+        menu.setAlignment(titel, Pos.CENTER);
+        menu.setAlignment(playButton, Pos.CENTER);
+        menu.setAlignment(endButton, Pos.TOP_CENTER);
+        menu.setMargin(playButton, insets);
+        menu.setMargin(endButton, insets);
+        
+        menu.setTop(top);
+        menu.setCenter(playButton);
         menu.setBottom(endButton);
 
-
+        mainLayout.setCenter(menu);
     }
     
     public Button createPlayButton() {
@@ -56,7 +54,7 @@ public final class MenuScreen {
 
         playButton.setOnAction((actionEvent -> {
             GameScreen gameLayout;
-            gameLayout = new GameScreen();
+            gameLayout = new GameScreen(mainLayout);
             mainLayout.setCenter(gameLayout.getGameLayout());
 
         }));
