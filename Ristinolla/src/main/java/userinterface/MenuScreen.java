@@ -34,20 +34,6 @@ public final class MenuScreen {
         top.setCenter(titel);
         BorderPane.setMargin(titel, insets);
 
-        VBox textFieldLayout = new VBox(15);
-        Label instructions = new Label("Write your name");
-        this.nickname = new TextField();
-        this.nickname.setPromptText("Players nickname");
-        nickname.setMaxWidth(150);
-        textFieldLayout.setAlignment(Pos.CENTER);
-        textFieldLayout.getChildren().addAll(instructions, nickname);
-
-        BorderPane.setAlignment(textFieldLayout, Pos.CENTER);
-        BorderPane.setAlignment(top, Pos.CENTER);
-
-        menu.setTop(top);
-        menu.setTop(textFieldLayout);
-
         mainLayout.setCenter(menu);
         
         Button playButton = createPlayButton();

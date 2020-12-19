@@ -4,7 +4,7 @@ package main;
 import userinterface.Game;
 
 
- //Main class aloittaa pelin
+ //Main class starts the game
 
 public class Main {
 
