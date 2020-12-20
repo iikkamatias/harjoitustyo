@@ -1,4 +1,4 @@
-# Ohjelmistotekniikka harjoitustyö
+# Ohjelmistotekniikka harjoitustyö Ristinolla-peli
 
 [Arkkitehtuuri](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
