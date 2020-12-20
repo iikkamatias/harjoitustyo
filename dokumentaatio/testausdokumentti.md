@@ -26,9 +26,9 @@ Sovellus on ladattu githubista ja sen juureen on asetettu ohjeiden mukaisesti co
 
 ### Toiminnallisuudet
 
-Kaikki vaatimusmäärittelyn toiminnallisuudet on testattu.
+Suurinosa vaatimusmäärittelyn toiminnallisuudet on testattu. Taitava ohjelmoija varmasti löytää sieltä testaamattomia toiminnallisuuksia.
 
 ## Sovellukseen jääneet laatuongelmat
 
-Sovelluksessa on muutamia liian pitkiä metodeja.
+Sovelluksessa on muutamia liian pitkiä metodeja. Lisäksi ohjelma luo tietokannan, mutta ohjelma ei vielä tue mitään toiminnallisuutta, jolla tietokantaa voisi hyödyntää.
 
