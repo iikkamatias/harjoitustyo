@@ -11,7 +11,7 @@ Kansion Domain toimintaa testaavat luokat DaoTest ja LogicTest. LogicTest-luokka
 
 ### Testikattavuus
 
-<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Testikattavuus.png" width="300">
+<img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Testikattavuus.png" width="900">
  
  
 ## Järjestelmätestaus
