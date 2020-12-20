@@ -44,11 +44,9 @@ public class DaoTest {
     
     @Test
     public void addingUsernameCorrectly() {
-        this.dao.addUser("Höpö");
+        this.dao.addUser("Löpö");
         
-        assertEquals(false, this.dao.containsUser("Höpö"));
+        assertEquals(false, this.dao.containsUser("Löpö"));
     }
-
-
 
 }

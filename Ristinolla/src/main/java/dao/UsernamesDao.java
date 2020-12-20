@@ -83,7 +83,7 @@ public class UsernamesDao {
             ResultSet r = check.executeQuery();
         
             db.close();
-            return r.next();
+            return true;
         } catch (SQLException e) {
             return false;
         }
