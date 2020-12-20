@@ -8,6 +8,8 @@
 
 [Käyttöohje](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
+[Testausdokumentti](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
+
 ## Komentorivitoiminnot
 
 ### Testaus
