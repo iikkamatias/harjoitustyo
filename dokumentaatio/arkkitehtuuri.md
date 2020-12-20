@@ -34,7 +34,12 @@ Käyttäjän toiminnan seurauksena Userinterface siirtää metodien avulla tieto
 
  
  ## Sekvenssikaavio
- <img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/sekvenssikaavio.png" width="500">
+ 
+ Toimintalogiikka, kun käyttäjä tekee siirjota pelissä ja peli päättyy.
+ 
+ <img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Kaavio.png" width="500">
+ 
+Käyttöliittymä kutsuu Logic-luokkaa, jossa on tiedot pelistä. Kun pelaaja asettaa siirtonsa tyhjään kohtaan, vuoro vaihtuu. Kun siirto tehdään ja löytyy voittava suora, kutsutaan metodia end(), jonka jälkeen käyttöliittymä luo uuden näkymän endlayout.
  
  ## Ohjelman rakenteeseen jääneet heikkoidet
 
