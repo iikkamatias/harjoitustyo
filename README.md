@@ -1,5 +1,7 @@
 # Ohjelmistotekniikka harjoitustyö Ristinolla-peli
 
+##  [Loppupalautus](https://github.com/iikkamatias/harjoitustyo/releases/tag/viikko7)
+
 [Arkkitehtuuri](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 [Määrittelydokumentti](https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/dokumentaatio.md)
