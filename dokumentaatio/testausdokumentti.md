@@ -11,6 +11,8 @@ Kansion Domain toimintaa testaavat luokat DaoTest ja LogicTest. LogicTest-luokka
 
 ### Testikattavuus
 
+Sovelluksen testauksen rivikattavuus on 80% ja haaraumakattavuus on 78%
+
 <img src="https://github.com/iikkamatias/harjoitustyo/blob/master/dokumentaatio/Testikattavuus.png" width="1500">
  
  
