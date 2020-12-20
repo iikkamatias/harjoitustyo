@@ -12,11 +12,9 @@ Pakkaus _userinterface_ sisältää JavaFX:llä toteutetun käyttöliittymän _d
 
  Sovelluksen käyttöliittymä koostuu kahdesta kokonaisuudesta:
  * Ristinolla peli ja siihen liittyvät valinnat
-	* Aloitusnäkymä, jossa pelaaja voi valita nimen
+	* Aloitusnäkymä, jossa pelaaja voi siirtyä peliin, tai lopetusnäkymään
 	* Pelinäkymä, jossa pelataan peliä
-	* Loppunäkymä, jossa pelaaja voi siirtyä katselemaan, ketkä ovat peliä pelanneet.
- * Näkymän Pelaajista, jotka ovat peliä pelanneet
-	* Peliä pelatessa listalle tulee nimimerkki automaattisesti
+	* Loppunäkymä, jossa pelaaja voi siirtyä aloitusnäkymään.
 
 Kaikki scenet on omia BorderPane-olioita, jotka asetetaan Game:ssa luotuun päänäkymään.
 
